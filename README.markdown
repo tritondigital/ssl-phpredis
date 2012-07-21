@@ -72,6 +72,13 @@ Distributed Redis Array
 
 See [dedicated page](https://github.com/nicolasff/phpredis/blob/master/arrays.markdown#readme).
 
+Enabling SSL
+============
+
+To enable SSL communications, add the following line to your php.ini:
+redis.use_ssl=1
+
+(More options will be coming soon)
 
 Error handling
 ==============
