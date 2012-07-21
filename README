@@ -1,0 +1,8 @@
+ssl-phpredis
+------------------------
+
+This is a fork of nicolasff's phpredis to allow SSL based communication to my SSL enabled version of Redis.
+
+The original version of phpredis may be found at https://github.com/nicolasff/phpredis
+
+
