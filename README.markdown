@@ -1,9 +1,15 @@
-PhpRedis
-=============
-The phpredis extension provides an API for communicating with the [Redis](http://redis.io/) key-value store. It is released under the [PHP License, version 3.01](http://www.php.net/license/3_01.txt).
+ssl-phpredis
+======================
+
+This is a fork of nicolasff's phpredis to allow SSL based communication to my SSL enabled version of Redis.
+
+The original version of phpredis may be found at https://github.com/nicolasff/phpredis
+
+The phpredis extension provides an API for communicating with the SSL enhanced version of [Redis](https://github.com/bbroerman/ssl-redis) key-value store. It is released under the [PHP License, version 3.01](http://www.php.net/license/3_01.txt).
+
 This code has been developed and maintained by Owlient from November 2009 to March 2011.
 
-You can send comments, patches, questions [here on github](https://github.com/nicolasff/phpredis/issues) or to n.favrefelix@gmail.com ([@yowgi](http://twitter.com/yowgi)).
+You can send comments, patches, questions [here on github](https://github.com/bbroerman/ssl-phpredis/issues) or to bbroerman@tritonmedia.com
 
 
 Installing/Configuring
