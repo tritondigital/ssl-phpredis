@@ -882,8 +882,6 @@ PHPAPI int redis_sock_connect(RedisSock *redis_sock TSRMLS_DC)
 	    	} else {
 	    	  host_len = spprintf(&host, 0, "%s:%d", redis_sock->host, redis_sock->port);
 	    	}
-	    	
-        fprintf( stderr, "Connecting to %s \n\n", host );
     }
 
     if (redis_sock->persistent) {
