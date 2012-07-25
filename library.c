@@ -877,8 +877,20 @@ PHPAPI int redis_sock_connect(RedisSock *redis_sock TSRMLS_DC)
 	    if(redis_sock->port == 0)
 	    	redis_sock->port = 6379;
 	    	
-	    	if( REDIS_G(use_ssl) == 1 ) {
-	    	  host_len = spprintf(&host, 0, "ssl://%s:%d", redis_sock->host, redis_sock->port);
+	      int str_offset = 0;
+	      int use_ssl = 0;
+	      if( NULL != strstr("ssl:", redis_sock->host) ) {
+	        use_ssl = 1;
+	        str_offset = 4;
+	        if( NULL != strstr("ssl://", redis_sock->host) ) {
+	          str_offset = 6;
+	        }
+	      } else if( REDIS_G(use_ssl) == 1 ) {
+	        use_ssl = 1;
+	      }
+
+	    	if( use_ssl == 1 ) {
+	    	  host_len = spprintf(&host, 0, "ssl://%s:%d", redis_sock->host + str_offset, redis_sock->port);
 	    	} else {
 	    	  host_len = spprintf(&host, 0, "%s:%d", redis_sock->host, redis_sock->port);
 	    	}
