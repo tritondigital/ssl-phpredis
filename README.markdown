@@ -78,7 +78,7 @@ Enabling SSL
 To enable SSL communications, add the following line to your php.ini:
 redis.use_ssl=1
 
-(More options will be coming soon)
+Additionally, if you do not want to enable SSL globally, but on a per-connection basis, you can add  ssl: or ssl:// to the beginning of the host name.
 
 Error handling
 ==============
