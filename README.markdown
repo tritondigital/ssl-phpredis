@@ -80,6 +80,9 @@ redis.use_ssl=1
 
 You will also need to enable the PHP SSL extension, by uncommenting the following line in your php.ini:
 extension=php_openssl.dll
+or
+extension=openssl.so
+
 
 
 Additionally, if you do not want to enable SSL globally, but on a per-connection basis, you can add  ssl: or ssl:// to the beginning of the host name.
