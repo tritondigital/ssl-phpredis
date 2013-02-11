@@ -11,6 +11,7 @@ This code has been developed and maintained by Owlient from November 2009 to Mar
 
 You can send comments, patches, questions [here on github](https://github.com/bbroerman/ssl-phpredis/issues) or to bbroerman@tritonmedia.com
 
+NOTE: This fork is no longer being maintained. For updates, including an in-progress update of 2.6 please see https://github.com/bbroerman30/ssl-phpredis
 
 Installing/Configuring
 ======================
