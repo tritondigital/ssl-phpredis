@@ -13,6 +13,9 @@ You can send comments, patches, questions [here on github](https://github.com/bb
 
 NOTE: This fork is no longer being maintained. For updates, including an in-progress update of 2.6 please see https://github.com/bbroerman30/ssl-phpredis
 
+Additionally, For this plugin to work properly with SSL, it requires an update to PHP. The changes are hosted here: https://github.com/bbroerman30/php-src
+
+
 Installing/Configuring
 ======================
 
